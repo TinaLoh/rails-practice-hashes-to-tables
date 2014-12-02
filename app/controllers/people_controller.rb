@@ -10,6 +10,10 @@ class PeopleController < ApplicationController
         telephone_number: Faker::PhoneNumber.phone_number
       }
     end
+
+    def first_name
+
+    end 
   end
 
 end

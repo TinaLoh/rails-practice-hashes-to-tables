@@ -4,9 +4,25 @@
 
 <table class="table table-bordered">
   <thead>
-
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Date of Birth</th>
+    <th>Eye Color</th>
+    <th>Telephone Number</th>
+    <th colspan="3"></th>
+  </tr>
   </thead>
-  <tbody>
 
+  <tbody>
+<% @people.each do |person| %>
+  <tr>
+    <td><%= person[:first_name] %></td>
+    <td><%= person[:last_name] %></td>
+    <td><%= person[:date_of_birth] %></td>
+    <td><%= person[:eye_color] %></td>
+    <td><%= person[:telephone_number] %></td>
+  </tr>
+  <% end %>
   </tbody>
 </table>
